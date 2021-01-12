@@ -1,5 +1,6 @@
 <template>
   <div class="todolist">
+    <i>To Do List</i>
     <div style="margin-top: 15px;">
       <el-input type="text" 
         v-model="todo" 
@@ -51,7 +52,15 @@ export default {
 }
 </script>
 <style scoped>
+.todolist {
+  width: 100%;
+  height: 100%;
+}
 .list {
   list-style: none; 
+}
+i {
+  font-size: 30px;
+  font-weight: 200;
 }
 </style>
